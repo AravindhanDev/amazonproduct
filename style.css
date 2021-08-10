@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #565681;
+    --purple: #8a5362;
+    --black: #23211f;
+    --red: #ca3d22;
+    --pink: #e9c7be;
+    --top: #242f3f;
+    --cta: #f08e1d;
+    --options: #dddcdd;
+}
+
+body {
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+}
+
+nav {
+    height: 4.3rem;
+    background-color: var(--top);
+    text-align: center;
+}
+
+.product {
+    width: 500px;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#watch {
+    text-align: center;
+}
+
+.heart-rate {
+    position: absolute;
+    left: 21.8rem;
+    top: 17rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.broken-heart {
+    color: #e00;
+    font-size: 3.5rem;
+    margin: 0.8rem 0;
+}
+
+.time {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    top: 20.5rem;
+    left: 19.9rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+#watch-details {
+    margin-top: 2rem;
+    width: 35rem;
+    position: absolute;
+    left: 35rem;
+}
+
+.about h1 {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin: 1rem 0;
+    width: 90%;
+    line-height: 1.5;
+}
+
+h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.watch-colors {
+    display: flex;
+}
+
+.colors {
+    width: 60px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 5px;
+    margin: 0 1rem 2rem 0;
+}
+
+.features button {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: var(--options);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 1rem 0 0;
+}
+
+.features button:hover,
+.features button:active {
+    background-color: #cccdcc;
+}
+
+.cta button {
+    margin-top: 2rem;
+    background-color: var(--cta);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        margin: 0;
+        margin: 3rem 0;
+    }
+    .product {
+        width: 350px;
+        height: 350px;
+    }
+    .heart-rate {
+        position: absolute;
+        left: 9.4rem;
+        top: 14rem;
+    }
+    .broken-heart {
+        font-size: 3rem;
+    }
+    .beat {
+        font-size: 1.3rem;
+    }
+    .time {
+        position: absolute;
+        font-size: 1.5rem;
+        left: 8rem;
+        top: 17rem;
+    }
+    #watch-details {
+        width: 35rem;
+        position: absolute;
+        left: 22rem;
+        top: 6.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .about p {
+        width: 21rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .product {
+        width: 250px;
+        height: 250px;
+    }
+    .heart-rate {
+        position: absolute;
+        left: 6.5rem;
+        top: 11.5rem;
+    }
+    .broken-heart {
+        font-size: 2.2rem;
+    }
+    .beat {
+        font-size: 1.1rem;
+    }
+    .time {
+        position: absolute;
+        font-size: 1.1rem;
+        left: 5.4rem;
+        top: 14rem;
+    }
+    #watch-details {
+        position: absolute;
+        left: 17rem;
+    }
+    .cta button {
+        padding: 0.7rem 1rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .about p {
+        width: 19rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .product {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 19rem;
+    }
+    #watch-details {
+        position: absolute;
+        left: 10rem;
+    }
+    .heart-rate {
+        position: absolute;
+        left: 4.1rem;
+        top: 10.5rem;
+    }
+    .broken-heart {
+        font-size: 1.8rem;
+    }
+    .beat {
+        font-size: 0.9rem;
+    }
+    .time {
+        position: absolute;
+        font-size: 0.8rem;
+        left: 4.4rem;
+        top: 12.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .product {
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        left: 5rem;
+        top: 0;
+        margin: 5rem 0 0;
+    }
+    .heart-rate {
+        position: absolute;
+        left: 11.2rem;
+        top: 8.8rem;
+    }
+    .broken-heart {
+        font-size: 2rem;
+    }
+    .beat {
+        font-size: 0.9rem;
+    }
+    .time {
+        position: absolute;
+        font-size: 1rem;
+        left: 9.6rem;
+        top: 11rem;
+        font-size: 1rem;
+    }
+    #watch-details {
+        position: absolute;
+        top: 19rem;
+        left: 0;
+        padding-left: 1rem;
+    }
+    .cta button {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    nav {
+        max-width: 100vw;
+    }
+}
