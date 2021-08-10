@@ -300,4 +300,9 @@ h3 {
     nav {
         max-width: 100vw;
     }
+     .heart-rate {
+        position: absolute;
+        left: 11.2rem;
+        top: 8.8rem;
+    }
 }
